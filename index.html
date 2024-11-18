@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=160&id=112575&format=png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="radio-input">
+        <p>Рівень складності</p>
+        <input checked="" class="input green" type="radio" name="radio"  id="easy"/>Початковий 
+        <input class="input yellow" type="radio" name="radio" id="middle"/>Cередній
+        <input class="input red" type="radio" name="radio"id="hard" />Важкий
+      </div>
+        
+    <div class="app">
+       
+        <div class="card">
+            <p id="word">Word</p>
+        </div>
+        <input type="text" id="translation" placeholder="Введіть переклад">
+        <button id="check">Перевірити</button>
+        <div class="stats">
+            <p>Крок: <span id="step">0</span>/<span id="total">12</span></p>
+            <p>Вірно: <span id="correct">0</span></p>
+            <p>Невірно: <span id="wrong">0</span></p>
+        </div>
+    </div>
+
+    <div class="modal-overlay"></div>
+    <div class="modal">
+        <p id="result">Ваш результат:</p>
+        <button class="close-btn">Закрити</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
